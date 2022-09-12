@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Set #3, Exercise 1</title> 
+    <title>Pattern design Exercise 1</title> 
     <link rel="stylesheet" href="custom.css" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -23,7 +23,16 @@
   <div id="app">
 
     <button class="add-note" type="button">+ Add Note</button>
-  </div>
+  </div> 
+
+   <template id="noteContainer">
+      <div class="box" id="box">
+          <textarea class="note" placeholder="Write Here"></textarea>
+          <div class="delete" id="delete" ><b>- Del Note</b></div>  
+          <div class="date" id="date"></div>
+      </div>
+     
+   </template>
   
 
 <script src="main.js" defer></script>
